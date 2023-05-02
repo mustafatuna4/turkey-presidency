@@ -39,11 +39,18 @@ function App() {
     }
   }, [url]);
   const convertDivToImage = async () => {
+    const style = document.createElement("style");
+    imageRef.current.appendChild(style);
+    style.sheet?.insertRule(
+      "body > div:last-child img { display: inline-block; }"
+    );
+
     const canvas = await html2canvas(imageRef.current, {
       scrollX: 0,
       scrollY: 0,
       letterRendering: true,
     });
+    style.remove();
     console.log(canvas);
     const imgDataUrl = canvas.toDataURL("image/png");
     let temp = dataURItoBlob(imgDataUrl);
