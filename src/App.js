@@ -17,6 +17,7 @@ import { BsDownload } from "react-icons/bs";
 function App() {
   const shareButton = useRef(null);
   const [url, setUrl] = useState();
+  let img = "";
   const [openPopup, setOpenPopup] = useState(false);
   const [leader, setLeader] = useState(null);
   const [cities, setCities] = useState(turkeyCities);
