@@ -39,18 +39,12 @@ function App() {
     }
   }, [url]);
   const convertDivToImage = async () => {
-    const style = document.createElement("style");
-    imageRef.current.appendChild(style);
-    style.sheet?.insertRule(
-      "body > div:last-child img { display: inline-block; }"
-    );
-
     const canvas = await html2canvas(imageRef.current, {
       scrollX: 0,
       scrollY: 0,
+      useCSSTransforms: false,
       letterRendering: true,
     });
-    style.remove();
     console.log(canvas);
     const imgDataUrl = canvas.toDataURL("image/png");
     let temp = dataURItoBlob(imgDataUrl);
@@ -77,18 +71,12 @@ function App() {
     return new Blob([ia], { type: mimeString });
   }
   const handleDownload = async () => {
-    const style = document.createElement("style");
-    imageRef.current.appendChild(style);
-    style.sheet?.insertRule(
-      "body > div:last-child img { display: inline-block; }"
-    );
-
     const canvas = await html2canvas(imageRef.current, {
       scrollX: 0,
       scrollY: 0,
+      useCSSTransforms: false,
       letterRendering: true,
     });
-    style.remove();
     await download(canvas);
   };
   const download = function (canvas) {
