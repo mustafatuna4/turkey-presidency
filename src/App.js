@@ -42,7 +42,7 @@ function App() {
     const canvas = await html2canvas(imageRef.current, {
       scrollX: 0,
       scrollY: 0,
-      useCSSTransforms: false,
+      letterRendering: true,
     });
     console.log(canvas);
     const imgDataUrl = canvas.toDataURL("image/png");
