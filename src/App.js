@@ -126,8 +126,8 @@ function App() {
     <div className="App">
       <p>
         Merhaba! Aşağıdaki haritayı veya oy oranlarını değiştirip kendi
-        tahmininizi yapabilirsiniz. Twitter, İnstagram veya Facebook butonlarına
-        tıklayıp Resmi indirme butonuna basarak indirip paylaşın!
+        tahmininizi yapabilirsiniz. İndirme butonuna basarak tahmini indirip
+        paylaşın!
       </p>
       <TwitterShareButton
         ref={shareButton}
