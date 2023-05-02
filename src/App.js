@@ -125,10 +125,9 @@ function App() {
   return (
     <div className="App">
       <p>
-        Merhaba! Aşağıdaki haritadan şehir şehir tahmin yapabilir, ya da onun
-        aşağısındaki oy oranlarları kısmından oy yüzdelerini tahmin
-        edebilirsiniz. Twitter, İnstagram veya Facebook butonlarına tıklayıp
-        tahmininizi sosyal medyada paylaşın!
+        Merhaba! Aşağıdaki haritayı veya oy oranlarını değiştirip kendi
+        tahmininizi yapabilirsiniz. Twitter, İnstagram veya Facebook butonlarına
+        tıklayıp Resmi indirme butonuna basarak indirip paylaşın!
       </p>
       <TwitterShareButton
         ref={shareButton}
