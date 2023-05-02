@@ -11,7 +11,7 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
   ]);
   React.useEffect(() => {
     handleInput();
-  }, [inputValues]);
+  }, [inputValues, handleInput]);
   const handleInput = () => {
     console.log(partyVotes, "partyVotes baj??");
 

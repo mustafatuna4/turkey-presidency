@@ -22,7 +22,6 @@ function App() {
   const [cities, setCities] = useState(turkeyCities);
   const [plateNo, setPlateNo] = useState(null);
   const [cityName, setCityName] = useState(null);
-  let img = "";
   const [partyVotes, setPartyVotes] = useState([40, 55, 2, 3]);
   const imageRef = useRef(null);
   const onClick = async () => {
