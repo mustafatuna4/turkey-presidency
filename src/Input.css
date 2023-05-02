@@ -1,0 +1,28 @@
+.number-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 80px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  color: #333;
+  margin-top: 5px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.number-input:hover {
+  border-color: #666;
+}
+
+.number-input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border-color: #4d90fe;
+}
+.number-input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

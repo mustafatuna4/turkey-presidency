@@ -1,0 +1,407 @@
+[
+  {
+    "plaka": 1,
+    "il_adi": "ADANA",
+    "party": "kemal"
+  },
+  {
+    "plaka": 2,
+    "il_adi": "ADIYAMAN",
+    "party": "rte"
+  },
+  {
+    "plaka": 3,
+    "il_adi": "AFYONKARAHİSAR",
+    "party": "rte"
+  },
+  {
+    "plaka": 4,
+    "il_adi": "AĞRI",
+    "party": "rte"
+  },
+  {
+    "plaka": 5,
+    "il_adi": "AMASYA",
+    "party": "rte"
+  },
+  {
+    "plaka": 6,
+    "il_adi": "ANKARA",
+    "party": "kemal"
+  },
+  {
+    "plaka": 7,
+    "il_adi": "ANTALYA",
+    "party": "kemal"
+  },
+  {
+    "plaka": 8,
+    "il_adi": "ARTVİN",
+    "party": "kemal"
+  },
+  {
+    "plaka": 9,
+    "il_adi": "AYDIN",
+    "party": "kemal"
+  },
+  {
+    "plaka": 10,
+    "il_adi": "BALIKESİR",
+    "party": "rte"
+  },
+  {
+    "plaka": 11,
+    "il_adi": "BİLECİK",
+    "party": "kemal"
+  },
+  {
+    "plaka": 12,
+    "il_adi": "BİNGÖL",
+    "party": "rte"
+  },
+  {
+    "plaka": 13,
+    "il_adi": "BİTLİS",
+    "party": "rte"
+  },
+  {
+    "plaka": 14,
+    "il_adi": "BOLU",
+    "party": "kemal"
+  },
+  {
+    "plaka": 15,
+    "il_adi": "BURDUR",
+    "party": "kemal"
+  },
+  {
+    "plaka": 16,
+    "il_adi": "BURSA",
+    "party": "rte"
+  },
+  {
+    "plaka": 17,
+    "il_adi": "ÇANAKKALE",
+    "party": "kemal"
+  },
+  {
+    "plaka": 18,
+    "il_adi": "ÇANKIRI",
+    "party": "rte"
+  },
+  {
+    "plaka": 19,
+    "il_adi": "ÇORUM",
+    "party": "rte"
+  },
+  {
+    "plaka": 20,
+    "il_adi": "DENİZLİ",
+    "party": "rte"
+  },
+  {
+    "plaka": 21,
+    "il_adi": "DİYARBAKIR",
+    "party": "kemal"
+  },
+  {
+    "plaka": 22,
+    "il_adi": "EDİRNE",
+    "party": "kemal"
+  },
+  {
+    "plaka": 23,
+    "il_adi": "ELAZIĞ",
+    "party": "rte"
+  },
+  {
+    "plaka": 24,
+    "il_adi": "ERZİNCAN",
+    "party": "rte"
+  },
+  {
+    "plaka": 25,
+    "il_adi": "ERZURUM",
+    "party": "rte"
+  },
+  {
+    "plaka": 26,
+    "il_adi": "ESKİŞEHİR",
+    "party": "kemal"
+  },
+  {
+    "plaka": 27,
+    "il_adi": "GAZİANTEP",
+    "party": "rte"
+  },
+  {
+    "plaka": 28,
+    "il_adi": "GİRESUN",
+    "party": "rte"
+  },
+  {
+    "plaka": 29,
+    "il_adi": "GÜMÜŞHANE",
+    "party": "rte"
+  },
+  {
+    "plaka": 30,
+    "il_adi": "HAKKARİ",
+    "party": "kemal"
+  },
+  {
+    "plaka": 31,
+    "il_adi": "HATAY",
+    "party": "kemal"
+  },
+  {
+    "plaka": 32,
+    "il_adi": "ISPARTA",
+    "party": "rte"
+  },
+  {
+    "plaka": 33,
+    "il_adi": "MERSİN(İÇEL)",
+    "party": "kemal"
+  },
+  {
+    "plaka": 34,
+    "il_adi": "İSTANBUL",
+    "party": "kemal"
+  },
+  {
+    "plaka": 35,
+    "il_adi": "İZMİR",
+    "party": "kemal"
+  },
+  {
+    "plaka": 36,
+    "il_adi": "KARS",
+    "party": "kemal"
+  },
+  {
+    "plaka": 37,
+    "il_adi": "KASTAMONU",
+    "party": "rte"
+  },
+  {
+    "plaka": 38,
+    "il_adi": "KAYSERİ",
+    "party": "rte"
+  },
+  {
+    "plaka": 39,
+    "il_adi": "KIRKLARELİ",
+    "party": "kemal"
+  },
+  {
+    "plaka": 40,
+    "il_adi": "KIRŞEHİR",
+    "party": "kemal"
+  },
+  {
+    "plaka": 41,
+    "il_adi": "KOCAELİ",
+    "party": "rte"
+  },
+  {
+    "plaka": 42,
+    "il_adi": "KONYA",
+    "party": "rte"
+  },
+  {
+    "plaka": 43,
+    "il_adi": "KÜTAHYA",
+    "party": "rte"
+  },
+  {
+    "plaka": 44,
+    "il_adi": "MALATYA",
+    "party": "rte"
+  },
+  {
+    "plaka": 45,
+    "il_adi": "MANİSA",
+    "party": "rte"
+  },
+  {
+    "plaka": 46,
+    "il_adi": "KAHRAMANMARAŞ",
+    "party": "rte"
+  },
+  {
+    "plaka": 47,
+    "il_adi": "MARDİN",
+    "party": "kemal"
+  },
+  {
+    "plaka": 48,
+    "il_adi": "MUĞLA",
+    "party": "kemal"
+  },
+  {
+    "plaka": 49,
+    "il_adi": "MUŞ",
+    "party": "rte"
+  },
+  {
+    "plaka": 50,
+    "il_adi": "NEVŞEHİR",
+    "party": "rte"
+  },
+  {
+    "plaka": 51,
+    "il_adi": "NİĞDE",
+    "party": "rte"
+  },
+  {
+    "plaka": 52,
+    "il_adi": "ORDU",
+    "party": "rte"
+  },
+  {
+    "plaka": 53,
+    "il_adi": "RİZE",
+    "party": "rte"
+  },
+  {
+    "plaka": 54,
+    "il_adi": "SAKARYA",
+    "party": "rte"
+  },
+  {
+    "plaka": 55,
+    "il_adi": "SAMSUN",
+    "party": "rte"
+  },
+  {
+    "plaka": 56,
+    "il_adi": "SİİRT",
+    "party": "kemal"
+  },
+  {
+    "plaka": 57,
+    "il_adi": "SİNOP",
+    "party": "kemal"
+  },
+  {
+    "plaka": 58,
+    "il_adi": "SİVAS",
+    "party": "rte"
+  },
+  {
+    "plaka": 59,
+    "il_adi": "TEKİRDAĞ",
+    "party": "kemal"
+  },
+  {
+    "plaka": 60,
+    "il_adi": "TOKAT",
+    "party": "rte"
+  },
+  {
+    "plaka": 61,
+    "il_adi": "TRABZON",
+    "party": "rte"
+  },
+  {
+    "plaka": 62,
+    "il_adi": "TUNCELİ",
+    "party": "kemal"
+  },
+  {
+    "plaka": 63,
+    "il_adi": "ŞANLIURFA",
+    "party": "rte"
+  },
+  {
+    "plaka": 64,
+    "il_adi": "UŞAK",
+    "party": "rte"
+  },
+  {
+    "plaka": 65,
+    "il_adi": "VAN",
+    "party": "kemal"
+  },
+  {
+    "plaka": 66,
+    "il_adi": "YOZGAT",
+    "party": "rte"
+  },
+  {
+    "plaka": 67,
+    "il_adi": "ZONGULDAK",
+    "party": "rte"
+  },
+  {
+    "plaka": 68,
+    "il_adi": "AKSARAY",
+    "party": "rte"
+  },
+  {
+    "plaka": 69,
+    "il_adi": "BAYBURT",
+    "party": "rte"
+  },
+  {
+    "plaka": 70,
+    "il_adi": "KARAMAN",
+    "party": "rte"
+  },
+  {
+    "plaka": 71,
+    "il_adi": "KIRIKKALE",
+    "party": "rte"
+  },
+  {
+    "plaka": 72,
+    "il_adi": "BATMAN",
+    "party": "kemal"
+  },
+  {
+    "plaka": 73,
+    "il_adi": "ŞIRNAK",
+    "party": "rte"
+  },
+  {
+    "plaka": 74,
+    "il_adi": "BARTIN",
+    "party": "rte"
+  },
+  {
+    "plaka": 75,
+    "il_adi": "ARDAHAN",
+    "party": "kemal"
+  },
+  {
+    "plaka": 76,
+    "il_adi": "IĞDIR",
+    "party": "kemal"
+  },
+  {
+    "plaka": 77,
+    "il_adi": "YALOVA",
+    "party": "kemal"
+  },
+  {
+    "plaka": 78,
+    "il_adi": "KARABÜK",
+    "party": "rte"
+  },
+  {
+    "plaka": 79,
+    "il_adi": "KİLİS",
+    "party": "rte"
+  },
+  {
+    "plaka": 80,
+    "il_adi": "OSMANİYE",
+    "party": "rte"
+  },
+  {
+    "plaka": 81,
+    "il_adi": "DÜZCE",
+    "party": "rte"
+  }
+]
