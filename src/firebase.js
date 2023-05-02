@@ -10,7 +10,7 @@ import { getStorage } from "firebase/storage";
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 //process.env.REACT_APP_KEY,
 const firebaseConfig = {
-  apiKey: "AIzaSyCYGQ-xg0SF8KS6X9jjdDvXD02M0U8ICqE",
+  apiKey: FIREBASE_API_KEY,
 
   authDomain: "casestudy-27fd2.firebaseapp.com",
 
