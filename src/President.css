@@ -22,7 +22,7 @@
   animation: glow--rte 1s ease-in-out infinite alternate;
 }
 .rte--selected {
-  border: gold solid 2px;
+  border: #f2be11 solid 2px;
 }
 
 .ince {
@@ -43,7 +43,7 @@
 
 @keyframes glow--rte {
   from {
-    box-shadow: 0 0 10px gold;
+    box-shadow: 0 0 10px #f2be11;
   }
   to {
     box-shadow: 0 0 20px rgba(31, 0, 0, 0.8);

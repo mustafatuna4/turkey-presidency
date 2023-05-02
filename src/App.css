@@ -92,7 +92,7 @@ g[id="turkiye"] > g[party="kemal"] > path {
   fill: red !important;
 }
 g[id="turkiye"] > g[party="rte"] > path {
-  fill: gold !important;
+  fill: #f2be11 !important;
 }
 
 g[id="turkiye"] > g[party="ince"] > path {
