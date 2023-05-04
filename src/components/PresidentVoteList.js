@@ -39,11 +39,17 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
             min="0"
             value={inputValues[0]}
             onChange={(event) => {
-              let val = event.target.value;
-              if (val < 0) val = 0;
-              let tempArr = [...inputValues];
-              tempArr[0] = val;
-              setInputValues(tempArr);
+              let val = parseFloat(event.target.value);
+              if (isNaN(val)) {
+                let tempArr = [...inputValues];
+                tempArr[0] = event.target.value;
+                setInputValues(tempArr);
+              } else {
+                if (val !== NaN && val < 0) val = 0;
+                let tempArr = [...inputValues];
+                tempArr[0] = val;
+                setInputValues(tempArr);
+              }
             }}
           ></input>
         </div>
@@ -56,11 +62,17 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
             min="0"
             value={inputValues[1]}
             onChange={(event) => {
-              let val = event.target.value;
-              if (val < 0) val = 0;
-              let tempArr = [...inputValues];
-              tempArr[1] = val;
-              setInputValues(tempArr);
+              let val = parseFloat(event.target.value);
+              if (isNaN(val)) {
+                let tempArr = [...inputValues];
+                tempArr[1] = event.target.value;
+                setInputValues(tempArr);
+              } else {
+                if (val !== NaN && val < 0) val = 0;
+                let tempArr = [...inputValues];
+                tempArr[1] = val;
+                setInputValues(tempArr);
+              }
             }}
           ></input>
         </div>
@@ -69,14 +81,20 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
           <input
             className="number-input"
             type="number"
-            min="0"
+            step="any"
             value={inputValues[2]}
             onChange={(event) => {
-              let val = event.target.value;
-              if (val < 0) val = 0;
-              let tempArr = [...inputValues];
-              tempArr[2] = val;
-              setInputValues(tempArr);
+              let val = parseFloat(event.target.value);
+              if (isNaN(val)) {
+                let tempArr = [...inputValues];
+                tempArr[2] = event.target.value;
+                setInputValues(tempArr);
+              } else {
+                if (val !== NaN && val < 0) val = 0;
+                let tempArr = [...inputValues];
+                tempArr[2] = val;
+                setInputValues(tempArr);
+              }
             }}
           ></input>
         </div>
@@ -89,11 +107,17 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
             onkeydown={preventMinus}
             value={inputValues[3]}
             onChange={(event) => {
-              let val = event.target.value;
-              if (val < 0) val = 0;
-              let tempArr = [...inputValues];
-              tempArr[3] = val;
-              setInputValues(tempArr);
+              let val = parseFloat(event.target.value);
+              if (isNaN(val)) {
+                let tempArr = [...inputValues];
+                tempArr[3] = event.target.value;
+                setInputValues(tempArr);
+              } else {
+                if (val !== NaN && val < 0) val = 0;
+                let tempArr = [...inputValues];
+                tempArr[3] = val;
+                setInputValues(tempArr);
+              }
             }}
           ></input>
         </div>
