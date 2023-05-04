@@ -25,7 +25,11 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
   React.useEffect(() => {
     handleInput();
   }, [inputValues]);
-
+  const preventMinus = (e) => {
+    if (e.code === "Minus") {
+      e.preventDefault();
+    }
+  };
   return (
     <div>
       <div className="president--list--input">
@@ -34,10 +38,13 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
           <input
             className="number-input"
             type="number"
+            min="0"
             value={inputValues[0]}
             onChange={(event) => {
+              let val = event.target.value;
+              if (val < 0) val = 0;
               let tempArr = [...inputValues];
-              tempArr[0] = event.target.value;
+              tempArr[0] = val;
               setInputValues(tempArr);
             }}
           ></input>
@@ -48,11 +55,13 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
           <input
             className="number-input"
             type="number"
+            min="0"
             value={inputValues[1]}
             onChange={(event) => {
-              console.log(event.target.value, "event.target.value baj");
+              let val = event.target.value;
+              if (val < 0) val = 0;
               let tempArr = [...inputValues];
-              tempArr[1] = event.target.value;
+              tempArr[1] = val;
               setInputValues(tempArr);
               console.log(inputValues, "inputValues baj");
             }}
@@ -63,10 +72,13 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
           <input
             className="number-input"
             type="number"
+            min="0"
             value={inputValues[2]}
             onChange={(event) => {
+              let val = event.target.value;
+              if (val < 0) val = 0;
               let tempArr = [...inputValues];
-              tempArr[2] = event.target.value;
+              tempArr[2] = val;
               setInputValues(tempArr);
             }}
           ></input>
@@ -76,10 +88,14 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
           <input
             className="number-input"
             type="number"
+            min="0"
+            onkeydown={preventMinus}
             value={inputValues[3]}
             onChange={(event) => {
+              let val = event.target.value;
+              if (val < 0) val = 0;
               let tempArr = [...inputValues];
-              tempArr[3] = event.target.value;
+              tempArr[3] = val;
               setInputValues(tempArr);
             }}
           ></input>
