@@ -2,10 +2,7 @@ import React from "react";
 import "../ProgressBar.css";
 
 const PartyVotesProgressBar = ({ props }) => {
-  console.log(props, "props");
-
   const sumOverHundred = props[0] + props[1] + props[2] + props[3] > 100;
-  console.log(sumOverHundred);
   let party1Votes = props[0] ? props[0] : 0;
 
   let party2Votes = props[1] ? props[1] : 0;

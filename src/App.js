@@ -35,7 +35,6 @@ function App() {
   };
   useEffect(() => {
     if (url !== undefined) {
-      console.log("url baj", url);
       shareButton.current.click();
       setUrl();
     }
@@ -48,7 +47,6 @@ function App() {
       useCSSTransforms: false,
       letterRendering: true,
     });
-    console.log(canvas);
     const imgDataUrl = canvas.toDataURL("image/png");
     let temp = dataURItoBlob(imgDataUrl);
     img = imgDataUrl.substring("data:image/png;base64,".length);
@@ -57,7 +55,6 @@ function App() {
     await uploadBytes(storageRef, temp);
 
     const imageLink = await getDownloadURL(storageRef);
-    console.log(imageLink);
     pRef.current.style.display = "none";
     return imageLink + ".png";
   };
@@ -92,7 +89,6 @@ function App() {
     link.click();
   };
   const setVotes = (votes) => {
-    console.log(votes, "botes baj");
     setPartyVotes(votes);
   };
 
@@ -107,32 +103,18 @@ function App() {
     setOpenPopup(true);
     const clickedCity = cities.find((c) => c.plaka === plateNumber);
     setCityName(clickedCity.il_adi);
-
-    console.log(cityName, "cityName baj");
-    console.log(plateNumber, "plateNumber baj");
     setPlateNo((plateNo) => {
-      console.log(plateNumber);
       return plateNumber;
     });
-
-    console.log(plateNo, "plateno baj");
   };
   const voteLeader = (value) => {
     const plateNumber = plateNo;
     let citiesTemp = [...cities];
-    console.log(cities, "bakk");
     const clickedCity = cities.find((c) => c.plaka === plateNumber);
     const id = cities.findIndex((c) => c.plaka === plateNumber);
     clickedCity.party = value;
     cities[id] = clickedCity;
-
-    console.log(cities[id], "cities[id] baj");
-    console.log(leader, "leader baj");
     setCities(citiesTemp);
-    console.log(
-      cities.find((c) => c.cityId === plateNumber),
-      "paryy baj"
-    );
     setLeader(null);
   };
   return (

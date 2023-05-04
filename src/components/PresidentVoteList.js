@@ -10,8 +10,6 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
     partyVotes[3],
   ]);
   const handleInput = () => {
-    console.log(partyVotes, "partyVotes baj??");
-
     let tempArr = [...partyVotes];
     tempArr[0] = parseFloat(inputValues[0]);
 
@@ -63,7 +61,6 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
               let tempArr = [...inputValues];
               tempArr[1] = val;
               setInputValues(tempArr);
-              console.log(inputValues, "inputValues baj");
             }}
           ></input>
         </div>

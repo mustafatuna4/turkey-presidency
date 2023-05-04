@@ -5,10 +5,7 @@ const PresidentList = ({ setLeader, voteLeader, setOpenPopup }) => {
   const [selected, setSelected] = React.useState(null);
 
   const handleSelect = (value) => {
-    console.log(value, "select baj??");
     setLeader(() => {
-      console.log(value, "leader baj");
-
       return value;
     });
     setSelected(value);
