@@ -25,6 +25,8 @@ function App() {
   const [cityName, setCityName] = useState(null);
   const [partyVotes, setPartyVotes] = useState([40, 55, 2, 3]);
   const imageRef = useRef(null);
+
+  const pRef = useRef(null);
   const onClick = async () => {
     if (url === undefined) {
       const newUrl = await convertDivToImage();
@@ -39,6 +41,7 @@ function App() {
     }
   }, [url]);
   const convertDivToImage = async () => {
+    pRef.current.style.display = "";
     const canvas = await html2canvas(imageRef.current, {
       scrollX: 0,
       scrollY: 0,
@@ -55,6 +58,7 @@ function App() {
 
     const imageLink = await getDownloadURL(storageRef);
     console.log(imageLink);
+    pRef.current.style.display = "none";
     return imageLink + ".png";
   };
 
@@ -71,6 +75,7 @@ function App() {
     return new Blob([ia], { type: mimeString });
   }
   const handleDownload = async () => {
+    pRef.current.style.display = "";
     const canvas = await html2canvas(imageRef.current, {
       scrollX: 0,
       scrollY: 0,
@@ -78,6 +83,7 @@ function App() {
       letterRendering: true,
     });
     await download(canvas);
+    pRef.current.style.display = "none";
   };
   const download = function (canvas) {
     const link = document.createElement("a");
@@ -85,7 +91,6 @@ function App() {
     link.href = canvas.toDataURL();
     link.click();
   };
-
   const setVotes = (votes) => {
     console.log(votes, "botes baj");
     setPartyVotes(votes);
@@ -151,13 +156,24 @@ function App() {
         onClick={handleDownload}
         size={29}
       ></BsDownload>
-      <div ref={imageRef}>
-        <TurkeyMap
-          className="map"
-          showTooltip
-          cityWrapper={renderCity}
-          onClick={({ plateNumber }) => handleClick(plateNumber)}
-        ></TurkeyMap>
+      <div className="App">
+        <div ref={imageRef}>
+          <TurkeyMap
+            showTooltip
+            cityWrapper={renderCity}
+            onClick={({ plateNumber }) => handleClick(plateNumber)}
+          ></TurkeyMap>
+          {partyVotes[0] + partyVotes[1] + partyVotes[2] + partyVotes[3] <=
+          100 ? (
+            <h4 style={{ display: "none", marginTop: "20px" }} ref={pRef}>
+              Recep Tayyip Erdoğan: {partyVotes[0]}% | Kemal Kılıçdaroğlu:{" "}
+              {partyVotes[1]}% | Muharrem İnce: {partyVotes[2]}% | Sinan Oğan:{" "}
+              {partyVotes[3]}%
+            </h4>
+          ) : (
+            ""
+          )}
+        </div>
         <Popup
           open={openPopup}
           position="right center"
@@ -166,7 +182,7 @@ function App() {
         >
           {(close) => (
             <div className="popup-container">
-              <h2>{cityName}</h2>
+              <h2 className="cityname">{cityName}</h2>
               <button
                 className="close"
                 onClick={() => {

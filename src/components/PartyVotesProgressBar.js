@@ -82,7 +82,7 @@ const PartyVotesProgressBar = ({ props }) => {
           )}
         </div>
       ) : (
-        <p>Toplam 100'ü geçmemeli!</p>
+        <p className="warning">Toplam 100'ü geçmemeli!</p>
       )}
     </div>
   );

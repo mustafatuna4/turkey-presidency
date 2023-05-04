@@ -9,9 +9,6 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
     partyVotes[2],
     partyVotes[3],
   ]);
-  React.useEffect(() => {
-    handleInput();
-  }, [inputValues, handleInput]);
   const handleInput = () => {
     console.log(partyVotes, "partyVotes baj??");
 
@@ -25,6 +22,9 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
     tempArr[3] = parseFloat(inputValues[3]);
     setPartyVotes(tempArr);
   };
+  React.useEffect(() => {
+    handleInput();
+  }, [inputValues]);
 
   return (
     <div>
@@ -59,7 +59,7 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
           ></input>
         </div>
         <div className="president--card--input">
-          <President name={"Sinan Oğan"} photo={"onan"}></President>
+          <President name={"Muharrem İnce"} photo={"ince"}></President>
           <input
             className="number-input"
             type="number"
@@ -72,7 +72,7 @@ const PresidentVoteList = ({ setPartyVotes, partyVotes }) => {
           ></input>
         </div>
         <div className="president--card--input">
-          <President name={"Muharrem İnce"} photo={"ince"}></President>
+          <President name={"Sinan Oğan"} photo={"onan"}></President>
           <input
             className="number-input"
             type="number"
